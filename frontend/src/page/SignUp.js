@@ -53,7 +53,7 @@ const SignUp = () => {
         {
             if(password===confirmpassword)
             {
-                const fetchdata = await fetch(`${process.env.REACT_APP_SERVER_DOMAIN}/signup`, {
+                const fetchdata = await fetch(`${process.env.REACT_APP_SERVER_DOMAIN}signup`, {
                     method : "POST",
                     headers:{
                         "content-type":"application/json"
